@@ -1,0 +1,32 @@
+require:
+  - rubocop-minitest
+
+inherit_mode:
+  merge:
+    - Exclude
+    - Include
+    - Prefixes
+
+AllCops:
+  DisplayCopNames: true
+  Exclude:
+    - "**/bin/**/*"
+  NewCops: enable
+  TargetRubyVersion: 2.4
+
+Layout/LineLength:
+  Max: 120
+
+Naming/FileName:
+  Enabled: false
+
+Security/Eval:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
